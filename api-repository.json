@@ -1,0 +1,299 @@
+[
+  {
+    "api_info": {
+      "title": "Current time",
+      "description": "Identify the appropriate Timezone area and location for a given location and get time at that location"
+    },
+    "api_endpoint": {
+      "method": "GET",
+      "url": "http://worldtimeapi.org/api/timezone/|area_location|",
+      "headers": {
+        "Content-Type": "application/json"
+      }
+    },
+    "placeholders": [
+      {
+        "placeholder": "|area_location|",
+        "validation_criteria": "An example of area_location is: America/New_York or Europe/London. Based on the valid location provided, determine appropriate area_location.",
+        "default": "America/New_York"
+      }
+    ]
+  },
+  {
+    "api_info": {
+      "title": "Current weather",
+      "description": "Get current weather information for a valid city or location."
+    },
+    "api_endpoint": {
+      "method": "GET",
+      "url": "http://api.weatherstack.com/current?query=|city|&units=f&access_key=|WEATHER_API_KEY|",
+      "headers": {
+        "Content-Type": "application/json"
+      }
+    },
+    "placeholders": [
+      {
+        "placeholder": "|city|",
+        "validation_criteria": "A valid and recognizable City name without State or State Code. e.g. Columbus"
+      },
+      {
+        "placeholder": "|WEATHER_API_KEY|",
+        "validation_criteria": "Must use default value.",
+        "default": "fe68f63b9cf1ac3a882d3179a30fcfb5"
+      }
+    ]
+  },
+  {
+    "api_info": {
+      "title": "Categorical news headlines",
+      "description": "Get news headlines for the given category and a valid country"
+    },
+    "api_endpoint": {
+      "method": "GET",
+      "url": "https://newsapi.org/v2/top-headlines?country=|country_code|&category=|category|&sortBy=publishedAt&apiKey=|NEWS_API_KEY|",
+      "headers": {
+        "Content-Type": "application/json"
+      }
+    },
+    "placeholders": [
+      {
+        "placeholder": "|country_code|",
+        "validation_criteria": "A valid 2-letter Country Code for a valid and recognizable Country",
+        "default": "US"
+      },
+      {
+        "placeholder": "|category|",
+        "validation_criteria": "Any one category amongst - business|general|health|science|technology. Default=general",
+        "default": "general"
+      },
+      {
+        "placeholder": "|NEWS_API_KEY|",
+        "validation_criteria": "Must use default value.",
+        "default": "53313b37f0ec42df823ae44e7baa9092"
+      }
+    ]
+  },
+  {
+    "api_info": {
+      "title": "Historical stock prices",
+      "description": "Get historical stock prices for a valid listed company over past number of days."
+    },
+    "api_endpoint": {
+      "method": "GET",
+      "url": "https://financialmodelingprep.com/api/v3/historical-price-full/|stock_symbol|?timeseries=|days|&apikey=|HIST_STOCK_API_KEY|",
+      "headers": {
+        "Content-Type": "application/json"
+      }
+    },
+    "placeholders": [
+      {
+        "placeholder": "|stock_symbol|",
+        "validation_criteria": "Stock Symbol for the speficied Company name",
+        "default": "SPY"
+      },
+      {
+        "placeholder": "|days|",
+        "validation_criteria": "Number of days for which stock information must be retrieved",
+        "default": "7"
+      },
+      {
+        "placeholder": "|HIST_STOCK_API_KEY|",
+        "validation_criteria": "Must use default value.",
+        "default": "cce187129676e058ec39aac4d22a9dea"
+      }
+    ]
+  },
+  {
+    "api_info": {
+      "title": "Company information",
+      "description": "Get profile about a valid company."
+    },
+    "api_endpoint": {
+      "method": "GET",
+      "url": "https://financialmodelingprep.com/api/v3/profile/|stock_symbol|?apikey=|COMPANY_PROFILE_API_KEY|",
+      "headers": {
+        "Content-Type": "application/json"
+      }
+    },
+    "placeholders": [
+      {
+        "placeholder": "|stock_symbol|",
+        "validation_criteria": "Stock Symbol for the speficied Company name"
+      },
+      {
+        "placeholder": "|COMPANY_PROFILE_API_KEY|",
+        "validation_criteria": "Must use default value.",
+        "default": "cce187129676e058ec39aac4d22a9dea"
+      }
+    ]
+  },
+  {
+    "api_info": {
+      "title": "Income statement or Profit and Loss financial statement",
+      "description": "Get latest income statement which is a type of financial statement containing information such as revenue, COGS, SG&A, profit/loss, types of expenses, etc."
+    },
+    "api_endpoint": {
+      "method": "GET",
+      "url": "https://financialmodelingprep.com/api/v3/income-statement/|stock_symbol|?limit=1&apikey=|INCOME_STMT_API_KEY|",
+      "headers": {
+        "Content-Type": "application/json"
+      }
+    },
+    "placeholders": [
+      {
+        "placeholder": "|stock_symbol|",
+        "validation_criteria": "Stock Symbol for the speficied Company name"
+      },
+      {
+        "placeholder": "|INCOME_STMT_API_KEY|",
+        "validation_criteria": "Must use default value.",
+        "default": "cce187129676e058ec39aac4d22a9dea"
+      }
+    ]
+  },
+  {
+    "api_info": {
+      "title": "Balance sheet financial statement",
+      "description": "Get latest balance sheet statement which is a type of financial statement containing information such as assets, liabilities, taxes, receivables, retained earnings, etc."
+    },
+    "api_endpoint": {
+      "method": "GET",
+      "url": "https://financialmodelingprep.com/api/v3/income-statement/|stock_symbol|?limit=1&apikey=|BALANCE_SHEET_API_KEY|",
+      "headers": {
+        "Content-Type": "application/json"
+      }
+    },
+    "placeholders": [
+      {
+        "placeholder": "|stock_symbol|",
+        "validation_criteria": "Stock Symbol for the speficied Company name"
+      },
+      {
+        "placeholder": "|BALANCE_SHEET_API_KEY|",
+        "validation_criteria": "Must use default value.",
+        "default": "cce187129676e058ec39aac4d22a9dea"
+      }
+    ]
+  },
+  {
+    "api_info": {
+      "title": "Cash flow financial statement",
+      "description": "Get latest cash flow statement which is a type of financial statement containing information such as flow of cash from operations, investments and financing activities."
+    },
+    "api_endpoint": {
+      "method": "GET",
+      "url": "https://financialmodelingprep.com/api/v3/cash-flow-statement/|stock_symbol|?limit=1&apikey=|CASH_FLOW_API_KEY|",
+      "headers": {
+        "Content-Type": "application/json"
+      }
+    },
+    "placeholders": [
+      {
+        "placeholder": "|stock_symbol|",
+        "validation_criteria": "Stock Symbol for the speficied Company name"
+      },
+      {
+        "placeholder": "|CASH_FLOW_API_KEY|",
+        "validation_criteria": "Must use default value.",
+        "default": "cce187129676e058ec39aac4d22a9dea"
+      }
+    ]
+  },
+  {
+    "api_info": {
+      "title": "Tesla chargers",
+      "description": "Get Tesla charging locations at a given address. Information provided by National Renewable Energy Laboratory (NREL)."
+    },
+    "api_endpoint": {
+      "method": "GET",
+      "url": "https://developer.nrel.gov/api/alt-fuel-stations/v1/nearest.json?fuel_type=ELEC&ev_network=Tesla&status=E&access=public&location=|address|&radius=|radius|&limit=5",
+      "headers": {
+        "Content-Type": "application/json",
+        "X-Api-Key": "UuIjax77dJTa6DRadSNw9c7uzbt9N8MOs5VfxgV1"
+      }
+    },
+    "placeholders": [
+      {
+        "placeholder": "|address|",
+        "validation_criteria": "Address that may include a landmark, Street, City and State or Zip Code"
+      },
+      {
+        "placeholder": "|radius|",
+        "validation_criteria": "radius within miles of a given address",
+        "default": "10"
+      }
+    ]
+  },
+  {
+    "api_info": {
+      "title": "Flight status by departure airports",
+      "description": "Lookup flights and their status from a given departing airport"
+    },
+    "api_endpoint": {
+      "method": "GET",
+      "url": "http://api.aviationstack.com/v1/flights?dep_iata=|airport_code|&access_key=|FLIGHTS_DEP_API_KEY|",
+      "headers": {
+        "Content-Type": "application/json"
+      }
+    },
+    "placeholders": [
+      {
+        "placeholder": "|airport_code|",
+        "validation_criteria": "IATA airport code such as, CMH, for Columbus airport or Port Columbus International airport"
+      },
+      {
+        "placeholder": "|FLIGHTS_DEP_API_KEY|",
+        "validation_criteria": "Must use default value.",
+        "default": "0fd11ca858911a32532b35844f8bba08"
+      }
+    ]
+  },
+  {
+    "api_info": {
+      "title": "Flight status by arriving airports",
+      "description": "Lookup flights and their status at a given arriving airport."
+    },
+    "api_endpoint": {
+      "method": "GET",
+      "url": "http://api.aviationstack.com/v1/flights?arr_iata=|airport_code|&access_key=|FLIGHTS_ARR_API_KEY|",
+      "headers": {
+        "Content-Type": "application/json"
+      }
+    },
+    "placeholders": [
+      {
+        "placeholder": "|airport_code|",
+        "validation_criteria": "IATA airport code such as, CMH, for Columbus airport or Port Columbus International airport"
+      },
+      {
+        "placeholder": "|FLIGHTS_ARR_API_KEY|",
+        "validation_criteria": "Must use default value.",
+        "default": "0fd11ca858911a32532b35844f8bba08"
+      }
+    ]
+  },
+  {
+    "api_info": {
+      "title": "Flight status by flight number",
+      "description": "Lookup flights and their status if a flight number is provide."
+    },
+    "api_endpoint": {
+      "method": "GET",
+      "url": "http://api.aviationstack.com/v1/flights?flight_iata=|flight_number|&access_key=|FLIGHTS_NUM_API_KEY|",
+      "headers": {
+        "Content-Type": "application/json"
+      }
+    },
+    "placeholders": [
+      {
+        "placeholder": "|flight_number|",
+        "validation_criteria": "Flight number such as, UA123, for United flight number 123"
+      },
+      {
+        "placeholder": "|FLIGHTS_NUM_API_KEY|",
+        "validation_criteria": "Must use default value.",
+        "default": "0fd11ca858911a32532b35844f8bba08"
+      }
+    ]
+  }
+]
