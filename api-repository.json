@@ -39,7 +39,7 @@
       {
         "placeholder": "|WEATHER_API_KEY|",
         "validation_criteria": "Must use default value.",
-        "default": "fe68f63b9cf1ac3a882d3179a30fcfb5"
+        "default": "xxxxxxxxxxxxxxxxxxxxxxxx"
       }
     ]
   },
@@ -69,7 +69,7 @@
       {
         "placeholder": "|NEWS_API_KEY|",
         "validation_criteria": "Must use default value.",
-        "default": "53313b37f0ec42df823ae44e7baa9092"
+        "default": "xxxxxxxxxxxxxxxxxxxxxxxx"
       }
     ]
   },
@@ -99,7 +99,7 @@
       {
         "placeholder": "|HIST_STOCK_API_KEY|",
         "validation_criteria": "Must use default value.",
-        "default": "cce187129676e058ec39aac4d22a9dea"
+        "default": "xxxxxxxxxxxxxxxxxxxxxxxx"
       }
     ]
   },
@@ -123,7 +123,7 @@
       {
         "placeholder": "|COMPANY_PROFILE_API_KEY|",
         "validation_criteria": "Must use default value.",
-        "default": "cce187129676e058ec39aac4d22a9dea"
+        "default": "xxxxxxxxxxxxxxxxxxxxxxxx"
       }
     ]
   },
@@ -147,7 +147,7 @@
       {
         "placeholder": "|INCOME_STMT_API_KEY|",
         "validation_criteria": "Must use default value.",
-        "default": "cce187129676e058ec39aac4d22a9dea"
+        "default": "xxxxxxxxxxxxxxxxxxxxxxxx"
       }
     ]
   },
@@ -171,7 +171,7 @@
       {
         "placeholder": "|BALANCE_SHEET_API_KEY|",
         "validation_criteria": "Must use default value.",
-        "default": "cce187129676e058ec39aac4d22a9dea"
+        "default": "xxxxxxxxxxxxxxxxxxxxxxxx"
       }
     ]
   },
@@ -195,7 +195,7 @@
       {
         "placeholder": "|CASH_FLOW_API_KEY|",
         "validation_criteria": "Must use default value.",
-        "default": "cce187129676e058ec39aac4d22a9dea"
+        "default": "xxxxxxxxxxxxxxxxxxxxxxxx"
       }
     ]
   },
@@ -209,7 +209,7 @@
       "url": "https://developer.nrel.gov/api/alt-fuel-stations/v1/nearest.json?fuel_type=ELEC&ev_network=Tesla&status=E&access=public&location=|address|&radius=|radius|&limit=5",
       "headers": {
         "Content-Type": "application/json",
-        "X-Api-Key": "UuIjax77dJTa6DRadSNw9c7uzbt9N8MOs5VfxgV1"
+        "X-Api-Key": "xxxxxxxxxxxxxxxxxxxxxxxx"
       }
     },
     "placeholders": [
@@ -244,7 +244,7 @@
       {
         "placeholder": "|FLIGHTS_DEP_API_KEY|",
         "validation_criteria": "Must use default value.",
-        "default": "0fd11ca858911a32532b35844f8bba08"
+        "default": "xxxxxxxxxxxxxxxxxxxxxxxx"
       }
     ]
   },
@@ -268,7 +268,7 @@
       {
         "placeholder": "|FLIGHTS_ARR_API_KEY|",
         "validation_criteria": "Must use default value.",
-        "default": "0fd11ca858911a32532b35844f8bba08"
+        "default": "xxxxxxxxxxxxxxxxxxxxxxxx"
       }
     ]
   },
@@ -292,7 +292,7 @@
       {
         "placeholder": "|FLIGHTS_NUM_API_KEY|",
         "validation_criteria": "Must use default value.",
-        "default": "0fd11ca858911a32532b35844f8bba08"
+        "default": "xxxxxxxxxxxxxxxxxxxxxxxx"
       }
     ]
   }
