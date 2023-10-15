@@ -6,7 +6,7 @@
     },
     "api_endpoint": {
       "method": "GET",
-      "url": "http://worldtimeapi.org/api/timezone/|area_location|",
+      "url": "https://worldtimeapi.org/api/timezone/|area_location|",
       "headers": {
         "Content-Type": "application/json"
       }
@@ -21,12 +21,36 @@
   },
   {
     "api_info": {
-      "title": "Current weather",
-      "description": "Get current weather information for a valid city or location."
+      "title": "Current weather conditions",
+      "description": "Get current weather conditions for a valid city or location."
     },
     "api_endpoint": {
       "method": "GET",
-      "url": "http://api.weatherstack.com/current?query=|city|&units=f&access_key=|WEATHER_API_KEY|",
+      "url": "hhttps://api.openweathermap.org/data/2.5/weather?q==|city|&units=metric&access_key=|WEATHER_API_KEY|",
+      "headers": {
+        "Content-Type": "application/json"
+      }
+    },
+    "placeholders": [
+      {
+        "placeholder": "|city|",
+        "validation_criteria": "A valid and recognizable City name without State or State Code. e.g. Columbus"
+      },
+      {
+        "placeholder": "|WEATHER_API_KEY|",
+        "validation_criteria": "Must use default value.",
+        "default": "xxxxxxxxxxxxxxxxxxxxxxxx"
+      }
+    ]
+  },
+  {
+    "api_info": {
+      "title": "Weather forecast",
+      "description": "Get weather forecast for a valid city or location."
+    },
+    "api_endpoint": {
+      "method": "GET",
+      "url": "https://api.openweathermap.org/data/2.5/forecast?q=|city|&units=metric&appid=|WEATHER_API_KEY|",
       "headers": {
         "Content-Type": "application/json"
       }

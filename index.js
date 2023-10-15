@@ -2,6 +2,7 @@ const apiRepository = require('./api-repository.json');
 const AIDapter = require('ai-dapter');
 
 const ai = new AIDapter({
+  "app_name": "aidapter_demo",
   "provider": "OpenAI",
   "model_name": "gpt-3.5-turbo-16k",
   "endpoint": "https://api.openai.com/v1/chat/completions",
