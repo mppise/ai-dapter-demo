@@ -26,7 +26,7 @@
     },
     "api_endpoint": {
       "method": "GET",
-      "url": "hhttps://api.openweathermap.org/data/2.5/weather?q==|city|&units=metric&access_key=|WEATHER_API_KEY|",
+      "url": "hhttps://api.openweathermap.org/data/2.5/weather?q==|city|&units=metric&appid=|WEATHER_API_KEY|",
       "headers": {
         "Content-Type": "application/json"
       }
